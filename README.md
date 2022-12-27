@@ -35,6 +35,7 @@ See more about optional [configuration parameters](docs/params.md).
 ## Usage example
 ```java
 try {
+    Class.forName("com.aerospike.jdbc.AerospikeDriver");
     String url = "jdbc:aerospike:localhost:3300/test";
     Connection connection = DriverManager.getConnection(url);
 
